@@ -3,12 +3,13 @@ package com.sept.javastringproject;
 //  Replace all consonants with '*' in a String
 
 public class Consonants {
-	public static String sentence = "count all consonants in a string";
+	public static String sentence = "Count all consonants in a string";
 	
 	public int countConsonants(String s) {
-		
 		int count = 0;
 		s = s.trim();
+		s = s.toLowerCase();
+		
 		for(int i = 0; i < s.length(); i++) {
 			if(s.charAt(i) >= 'a' && s.charAt(i) <= 'z' &&
 			   s.charAt(i) != 'a' &&

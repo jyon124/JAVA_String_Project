@@ -2,10 +2,11 @@ package com.sept.javastringproject;
 
 // Count all the vowels in a sentence and display the count
 public class Vowels {
-	static String sentence = "please count all the vowels from this sentence.";
+	static String sentence = "Please count all the vowels from this sentence.";
 	
 	public int countAllVowels(String s) {
 		int count = 0;
+		s = s.toLowerCase();
 		
 		for(int i = 0; i < s.length(); i++) {
 			if(s.charAt(i) == 'a' || 
