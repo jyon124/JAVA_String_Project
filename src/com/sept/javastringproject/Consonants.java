@@ -8,7 +8,7 @@ public class Consonants {
 	public int countConsonants(String s) {
 		
 		int count = 0;
-		
+		s = s.trim();
 		for(int i = 0; i < s.length(); i++) {
 			if(s.charAt(i) >= 'a' && s.charAt(i) <= 'z' &&
 			   s.charAt(i) != 'a' &&
