@@ -4,11 +4,12 @@ package com.sept.javastringproject;
 
 
 public class Palindrome {
-	static String sentence = "level";
+	static String sentence = "Level";
 	
 	public boolean checkPalindrome(String s) {
 		int i = 0;
 		int j = s.length()-1;
+		s = s.toLowerCase();
 		while(i < j) {
 			if(s.charAt(i) == s.charAt(j)) {
 				i++;
